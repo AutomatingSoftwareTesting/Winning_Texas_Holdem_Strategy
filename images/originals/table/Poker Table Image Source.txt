@@ -1,0 +1,3 @@
+Catalog: http://insertmedia.office.microsoft.com
+Name: Texas_Hold'em_Poker_Table_with_Blinds.svg[2].png
+Resolution: 1024 (w) x 583 (h) pixels
