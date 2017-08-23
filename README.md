@@ -1,7 +1,10 @@
 # Winning Texas Hold'em Strategy
 
-## 
-This project 
+## Update Aug 2017 
+
+Attending Skill Distillery Java bootcamp (Sept 2017 - Jan 2018) to learn about full stack web development. 
+
+Want to someday release a more polished version of this as a Android mobile application developed using Java.
 
 ## What is it?
 
@@ -16,9 +19,3 @@ Please see the file called LICENSE.
 This project was created to help me demonstrate several skills I've acquired during my past several jobs.
 
 Specifically, I've included: object oriented programming, automated testing, systems testing, functional development (variables, decisions, functions, loops), exception handling, report writing, project implementation, directory navigation, system design, and data analysis concepts.
-
-## Update Aug 2017 
-
-Attending Skill Distillery Java bootcamp (Sept 2017 - Jan 2018) to learn about full stack web development. 
-
-Want to someday release a more polished version of this as a Android mobile application developed using Java.
