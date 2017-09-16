@@ -1,0 +1,21 @@
+Hand Number,Date/Time,Range File,Feedback,Position,Position Percentage,Min Opening Hand Type,Hole Cards,Hand Type,Hand Ranking Percentage,Your Decision,Correct Decision,Score
+1,09-16-17 07:47:33,Starting Hands EV Range.txt,Incorrect,Button,33.33,Q5s,Ad Ks ,AKo,3.77,fold,open,0
+2,09-16-17 07:47:33,Starting Hands EV Range.txt,Correct,High Jack,20.00,QTo,Ts 6h ,T6o,45.10,fold,fold,1
+3,09-16-17 07:47:33,Starting Hands EV Range.txt,Correct,6 Off Button,12.50,A5s,Ac 7d ,A7o,36.35,fold,fold,2
+4,09-16-17 07:47:33,Starting Hands EV Range.txt,Correct,Button,33.33,Q5s,Js 8h ,J8o,37.56,fold,fold,3
+5,09-16-17 07:47:33,Starting Hands EV Range.txt,Correct,Cut Off,25.00,K4s,Jh 6d ,J6o,56.86,fold,fold,4
+6,09-16-17 07:47:33,Starting Hands EV Range.txt,Correct,Cut Off,25.00,K4s,3s 2d ,32o,97.89,fold,fold,5
+7,09-16-17 07:47:33,Starting Hands EV Range.txt,Correct,Low Jack,16.67,55,Ks 9d ,K9o,28.05,fold,fold,6
+8,09-16-17 07:47:33,Starting Hands EV Range.txt,Correct,Low Jack,16.67,55,Td 4h ,T4o,58.97,fold,fold,7
+9,09-16-17 07:47:33,Starting Hands EV Range.txt,Incorrect,6 Off Button,12.50,A5s,Kh Th ,KTs,7.39,fold,open,7
+10,09-16-17 07:47:33,Starting Hands EV Range.txt,Incorrect,Low Jack,16.67,55,Ah Ac ,AA,0.45,fold,open,7
+11,09-16-17 07:47:33,Starting Hands EV Range.txt,Correct,5 Off Button,14.29,A4s,5h 4c ,54o,91.25,fold,fold,8
+12,09-16-17 07:47:33,Starting Hands EV Range.txt,Incorrect,High Jack,20.00,QTo,Ad Qc ,AQo,6.03,fold,open,8
+13,09-16-17 07:47:33,Starting Hands EV Range.txt,Incorrect,Low Jack,16.67,55,8s 8d ,88,6.79,fold,open,8
+14,09-16-17 07:47:33,Starting Hands EV Range.txt,Correct,8 Off Button,10.00,KQo,Ad 8s ,A8o,27.15,fold,fold,9
+15,09-16-17 07:47:33,Starting Hands EV Range.txt,Correct,Button,33.33,Q5s,8c 3h ,83o,68.33,fold,fold,10
+16,09-16-17 07:47:33,Starting Hands EV Range.txt,Correct,Cut Off,25.00,K4s,Qh 4d ,Q4o,83.71,fold,fold,11
+17,09-16-17 07:47:33,Starting Hands EV Range.txt,Correct,Low Jack,16.67,55,8c 3c ,83s,99.40,fold,fold,12
+18,09-16-17 07:47:33,Starting Hands EV Range.txt,Correct,Cut Off,25.00,K4s,Qd 6s ,Q6o,81.90,fold,fold,13
+19,09-16-17 07:47:33,Starting Hands EV Range.txt,Correct,Button,33.33,Q5s,Ks 2c ,K2o,94.27,fold,fold,14
+20,09-16-17 07:47:33,Starting Hands EV Range.txt,Correct,8 Off Button,10.00,KQo,Jh 5s ,J5o,86.43,fold,fold,15

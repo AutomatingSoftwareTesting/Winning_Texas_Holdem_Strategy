@@ -1,0 +1,6 @@
+Hand Number,Date/Time,Range File,Feedback,Position,Position Percentage,Min Opening Hand Type,Hole Cards,Hand Type,Hand Ranking Percentage,Your Decision,Correct Decision,Score
+1,09-16-17 07:48:52,Unimproved Range.txt,Correct,Low Jack,16.67,A5o,Th 2s ,T2o,66.21,fold,fold,1
+2,09-16-17 07:48:57,Unimproved Range.txt,Correct,Low Jack,16.67,A5o,Ah 2d ,A2o,20.36,fold,fold,2
+3,09-16-17 07:49:05,Unimproved Range.txt,Incorrect,High Jack,20.00,A2o,Ks 9s ,K9s,24.28,open,fold,2
+4,09-16-17 07:49:14,Unimproved Range.txt,Correct,8 Off Button,10.00,ATo,Jc 4c ,J4s,53.24,fold,fold,3
+5,09-16-17 07:49:22,Unimproved Range.txt,Correct,8 Off Button,10.00,ATo,Ad 7d ,A7s,13.42,fold,fold,4

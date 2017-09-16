@@ -1,0 +1,21 @@
+Hand Number,Date/Time,Range File,Feedback,Position,Position Percentage,Min Opening Hand Type,Hole Cards,Hand Type,Hand Ranking Percentage,Your Decision,Correct Decision,Score
+1,09-16-17 07:47:33,Unimproved Range.txt,Correct,Button,33.33,K2o,Ah 3d ,A3o,19.16,open,open,1
+2,09-16-17 07:47:33,Unimproved Range.txt,Incorrect,Button,33.33,K2o,6c 2s ,62o,92.76,open,fold,1
+3,09-16-17 07:47:33,Unimproved Range.txt,Incorrect,Button,33.33,K2o,8d 7h ,87o,75.87,open,fold,1
+4,09-16-17 07:47:33,Unimproved Range.txt,Incorrect,Button,33.33,K2o,4c 2s ,42o,98.79,open,fold,1
+5,09-16-17 07:47:33,Unimproved Range.txt,Incorrect,Button,33.33,K2o,7c 2c ,72s,87.03,open,fold,1
+6,09-16-17 07:47:33,Unimproved Range.txt,Incorrect,Button,33.33,K2o,Js 4d ,J4o,54.15,open,fold,1
+7,09-16-17 07:47:33,Unimproved Range.txt,Incorrect,Button,33.33,K2o,7c 5s ,75o,84.31,open,fold,1
+8,09-16-17 07:47:33,Unimproved Range.txt,Correct,Button,33.33,K2o,Kd Ks ,KK,0.90,open,open,2
+9,09-16-17 07:47:33,Unimproved Range.txt,Incorrect,Button,33.33,K2o,Js Td ,JTo,46.91,open,fold,2
+10,09-16-17 07:47:33,Unimproved Range.txt,Incorrect,Button,33.33,K2o,3d 2s ,32o,100.00,open,fold,2
+11,09-16-17 07:47:33,Unimproved Range.txt,Incorrect,Button,33.33,K2o,Th 8c ,T8o,58.97,open,fold,2
+12,09-16-17 07:47:33,Unimproved Range.txt,Incorrect,Button,33.33,K2o,6d 3c ,63o,91.55,open,fold,2
+13,09-16-17 07:47:33,Unimproved Range.txt,Correct,Button,33.33,K2o,Kh Th ,KTs,23.08,open,open,3
+14,09-16-17 07:47:33,Unimproved Range.txt,Incorrect,Button,33.33,K2o,5s 2s ,52s,95.48,open,fold,3
+15,09-16-17 07:47:33,Unimproved Range.txt,Incorrect,Button,33.33,K2o,Jd 7d ,J7s,49.62,open,fold,3
+16,09-16-17 07:47:33,Unimproved Range.txt,Incorrect,Button,33.33,K2o,5c 3s ,53o,95.17,open,fold,3
+17,09-16-17 07:47:33,Unimproved Range.txt,Correct,Button,33.33,K2o,Ad Ts ,ATo,10.71,open,open,4
+18,09-16-17 07:47:33,Unimproved Range.txt,Incorrect,Button,33.33,K2o,7s 6s ,76s,82.20,open,fold,4
+19,09-16-17 07:47:33,Unimproved Range.txt,Correct,Button,33.33,K2o,Ks 3s ,K3s,31.52,open,open,5
+20,09-16-17 07:47:33,Unimproved Range.txt,Incorrect,Button,33.33,K2o,7s 4h ,74o,85.52,open,fold,5
