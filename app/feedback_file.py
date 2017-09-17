@@ -1,11 +1,11 @@
 import datetime
-from app.dir_nav import FolderNavigation
+from app.dir_nav import DirNav
 
 
 class FeedbackFile(object):
     def __init__(self, num_players, output_format="csv"):
         date_time = datetime.datetime.now().strftime("%m-%d-%y %H%M")
-        report_dir = FolderNavigation().get_path("reports")
+        report_dir = DirNav().get_path("reports")
         feedback_file = report_dir + str(num_players) + "-Handed Range Trainer " + date_time + "." + output_format
         self.feedback_file = feedback_file
 

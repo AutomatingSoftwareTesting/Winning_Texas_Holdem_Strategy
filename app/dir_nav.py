@@ -2,7 +2,7 @@ import os
 import sys
 
 
-class FolderNavigation(object):
+class DirNav(object):
     def __init__(self, file_name=None, file_path=None):
         self.file_path = file_path
         self.name = file_name

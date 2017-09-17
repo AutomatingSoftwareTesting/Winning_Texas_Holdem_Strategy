@@ -1,5 +1,5 @@
 from tkinter import *
-from app.dir_nav import FolderNavigation
+from app.dir_nav import DirNav
 import app.feedback_file
 import app.range
 import os
@@ -70,7 +70,7 @@ class SetupGame(Frame):
         Checkbutton(self, text="Display decision feedback at the table?", font="bold", variable=self.is_feedback).grid(row=5, column=0, sticky=W, pady=10)
         self.is_feedback.set(1)
 
-        image_file_path = FolderNavigation().get_path("tables")
+        image_file_path = DirNav().get_path("tables")
         self.image = PhotoImage(file=image_file_path + "table_icon.png")
         Button(self, command=self.shutdown, text=" Start Playing", font=("Arial", 18), image=self.image, compound="left", width=250, height=60).grid(row=6, column=0, columnspan=3, pady=10)
 

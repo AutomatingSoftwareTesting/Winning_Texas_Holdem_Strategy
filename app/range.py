@@ -1,12 +1,12 @@
 import sys
 import tkinter.messagebox
-from dir_nav import FolderNavigation
+from dir_nav import DirNav
 
 
 class Range(object):
     def __init__(self, my_range=None):
         self.my_range = my_range
-        self.file_path = FolderNavigation().get_path("hand_ranges")
+        self.file_path = DirNav().get_path("hand_ranges")
 
     def get_my_range(self):
         return self.my_range
