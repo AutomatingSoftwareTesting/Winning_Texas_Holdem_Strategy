@@ -5,9 +5,9 @@ import app.range
 import os
 
 
-class SetupGame(Frame):
+class GameSetup(Frame):
     def __init__(self, master):
-        super(SetupGame, self).__init__(master)
+        super(GameSetup, self).__init__(master)
         self.create_widgets()
         app_setup.grid_columnconfigure(0, weight=1)
 
@@ -94,6 +94,6 @@ class SetupGame(Frame):
 app_setup = Tk()
 app_setup.title("No Limit Texas Hold'em Pre-flop Range Trainer")
 app_setup.geometry("1366x768+100+100")
-game_setup = SetupGame(app_setup).grid()
+game_setup = GameSetup(app_setup).grid()
 
 app_setup.mainloop()

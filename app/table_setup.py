@@ -1,9 +1,9 @@
 import pyglet
 import sys, os
-from game_setup import SetupGame, app_setup
+from game_setup import GameSetup, app_setup
 
 
-a = SetupGame(app_setup)
+a = GameSetup(app_setup)
 b, c, d, e = a.start_playing()
 
 table_size = b
