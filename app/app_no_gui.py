@@ -8,7 +8,7 @@ import app.decision
 import app.feedback_file
 
 
-class PlayGame(object):
+class AppNoGUI(object):
     def __init__(self, score=0, hand_num=1):
         self.score = score
         self.hand_num = hand_num
@@ -86,7 +86,7 @@ class PlayGame(object):
         return action
 
 
-a = PlayGame()
+a = AppNoGUI()
 b, c, d, e = a.setup_game()
 play = None
 while play != 0:
