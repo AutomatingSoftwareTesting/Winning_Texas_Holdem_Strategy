@@ -35,7 +35,7 @@ class Range(object):
                 if len(my_range.readline()) < 2 or len(my_range.readline()) > 3:
                     pass
                 else:
-                    my_range.readline()[-1]  # Once here we always want to trigger an index error.
+                    a = my_range.readline()[-1]  # Once here we always want to trigger an index error. Assigning to a variable to 'fix' error pep8 error message.
                     # If I return this to get rid of the warning it causes problems later because a '\n' is added. Also, if I remove the else part entirely a different, less helpful Index Error message is displayed.
         except IOError as ex:
             tkinter.messagebox.showerror("ERROR! Unable to read the file.", "Please fix the spelling of the text file name and then start the game again. Remember, the file extension should be '.txt'.\n\n" + str(ex))
