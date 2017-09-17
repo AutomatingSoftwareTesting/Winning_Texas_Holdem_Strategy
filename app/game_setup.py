@@ -74,7 +74,7 @@ class GameSetup(Frame):
         self.image = PhotoImage(file=image_file_path + "table_icon.png")
         Button(self, command=self.shutdown, text=" Start Playing", font=("Arial", 18), image=self.image, compound="left", width=250, height=60).grid(row=6, column=0, columnspan=3, pady=10)
 
-    def start_playing(self):
+    def setup_game(self):
         session_range = self.range.get()
         app.range.Range(session_range).file_layout()
         session_players = self.num_players.get()
@@ -83,11 +83,11 @@ class GameSetup(Frame):
         feedback_file = app.feedback_file.FeedbackFile(session_players, output_format)
         feedback_file.create_feedback_file()
         play_hand = session_players, session_range, feedback_file, show_feedback
-        print(play_hand)
+        print(play_hand)  # Only printing out for now to help with testing
         return play_hand
 
     def shutdown(self):
-        self.start_playing()
+        self.setup_game()
         app_setup.destroy()
 
 

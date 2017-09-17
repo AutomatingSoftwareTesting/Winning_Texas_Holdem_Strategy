@@ -8,7 +8,7 @@ import app.decision
 import app.feedback_file
 
 
-class AppNoGUI(object):
+class PlayGame(object):
     def __init__(self, score=0, hand_num=1):
         self.score = score
         self.hand_num = hand_num
@@ -20,42 +20,35 @@ class AppNoGUI(object):
         return int(self.hand_num)
 
     def setup_game(self):
-        # print(session_players)
         session_players = 6
         range = "Unimproved Range.txt"
-        # print(range)
         output_format = "csv"
         feedback_file = app.feedback_file.FeedbackFile(session_players, output_format)
         feedback_file.create_feedback_file()
-        # print(feedback)
         show_feedback = True
         return session_players, range, feedback_file, show_feedback
 
-    def play_hand(self, session_players, range, feedback_file, show_feedback):
+    def play_hand(self, num_players, range, feedback_file, show_feedback):
         date_time = datetime.datetime.now().strftime("%m-%d-%y %H:%M:%S")
         print("Hand number: " + str(self.hand_num))
-        # print(self.score)
 
         deck = app.deck.Deck()
         deck.create()
         deck.shuffle()
-        # print(deck)
         hand = app.hand.Hand()
         hand.get_hand(deck)
         print(hand)
         hand.order_hand()
         type = hand.hand_type()
-        # print(type)
 
         position = app.position.Position()
-        position.current_position(session_players)
+        position.current_position(num_players)
         print(position)
         position_min = position.min_open()
-        # print(position_min)
 
         r = app.range.Range(range)
         correct_decision, hand_percent, total_cards = r.correct_decision(type, position_min)
-        # print(correct_decision)
+        # print(correct_decision)  Leaving for reference in case someone else isn't that familiar with hand ranges.
         # print(hand_percent)
         # print(total_cards)  # To confirm the hand percentage is correct - total_cards / 1326 = hand_percent
 
@@ -64,7 +57,6 @@ class AppNoGUI(object):
 
         action = int(input("What is your decision? (4=Open, 6=Fold): "))
         decision = app.decision.Decision(action).decision()
-        # print(decision)
 
         if decision != "stop":
             if decision == correct_decision:
@@ -86,8 +78,8 @@ class AppNoGUI(object):
         return action
 
 
-a = AppNoGUI()
-b, c, d, e = a.setup_game()
+start_game = PlayGame()
+num_players, range, file_extension, show_feedback = start_game.setup_game()
 play = None
 while play != 0:
-    play = a.play_hand(b, c, d, e)
+    play = start_game.play_hand(num_players, range, file_extension, show_feedback)

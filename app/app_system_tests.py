@@ -11,7 +11,7 @@ import os
 class AppSystemTests(object):
     """This module is different from the rest of the application and is intended to show some concepts related to testing the whole system. This will create 5 different reports in the user's report folder.
     Additional information about the setup scenarios for each of the reports is below. Some key ideas: 1) this runs in a 'live' environment and touches all of the critical functionality of the application,
-    2) if there are serious errors in any of the modules none of the reports will output (and there should be an exception somewhere to analyze and fix), 3) if someone implements the system incorrectly, or
+    2) if there are serious errors in any of the modules, none of the reports will output and there should be an exception somewhere to analyze and fix, 3) if someone implements the system incorrectly, or
     moves key setup items later, #2 will also happen, 4) the outputted data simulates 'real' results that someone could further analyze for varying reasons; i.e. the customer, software manager, manual quality
     assurance tester, 5) this could help troubleshoot performance issues with hardware (and if valid networks, databases), etc., and 6) this simulates gui user selection options."""
     def __init__(self, score=0, hand_num=1):
@@ -31,7 +31,7 @@ class AppSystemTests(object):
         feedback_file.create_feedback_file()
         return session_players, session_range, feedback_file, show_feedback
 
-    def play_hand(self, session_players, session_range, feedback_file, show_feedback, action):  # Adding the action to the end b/c they are the only choices on the table gui. '4' = open and '6' = close.
+    def play_hand(self, session_players, session_range, feedback_file, show_feedback, action):  # Adding the action to simulate faster input of '4' = open and '6' = close.
         date_time = datetime.datetime.now().strftime("%m-%d-%y %H:%M:%S")
         deck = Deck()
         deck.create()
@@ -62,35 +62,35 @@ class AppSystemTests(object):
 
 """These tests could be done several different ways depending on who they are for and what is need. I'm displaying them below to show the general idea of each test. Note: Some of these tests don't really make
 sense in a simplified example such as this project. However, the ideas would still apply if there were at least tens of thousands of lines of code written by multiple developers over time, several networks,
-different types of databases/operating systems, ect, involved."""
+different types of databases/operating systems, etc., involved."""
 
 # Testing default setup parameters in the gui.
-test1 = AppSystemTests()
-a, b, c, d = test1.setup_game_tests(6, "Unimproved Range.txt", "csv", True)
+start_test1 = AppSystemTests()
+num_players, range, file_extension, show_feedback = start_test1.setup_game_tests(6, "Unimproved Range.txt", "csv", True)
 hand_num = 0
 while hand_num < 21:
-    hand_num = test1.play_hand(a, b, c, d, 6)
+    hand_num = start_test1.play_hand(num_players, range, file_extension, show_feedback, 6)
 
 # Testing non-default setup parameters.
-test2 = AppSystemTests()
-a, b, c, d = test2.setup_game_tests(10, "Starting Hands EV Range.txt", "txt", False)
+start_test2 = AppSystemTests()
+num_players, range, file_extension, show_feedback = start_test2.setup_game_tests(10, "Starting Hands EV Range.txt", "txt", False)
 hand_num = 0
 while hand_num < 21:
-    hand_num = test2.play_hand(a, b, c, d, 6)
+    hand_num = start_test2.play_hand(num_players, range, file_extension, show_feedback, 6)
 
 # Testing the min player size. Note: with manual bounds testing would also test the number of players that aren't valid (2, 11, d); however, instead made it impossible to enter these values in the gui.
-test3 = AppSystemTests()
-a, b, c, d = test3.setup_game_tests(3, "Unimproved Range.txt", "txt", False)
+start_test3 = AppSystemTests()
+num_players, range, file_extension, show_feedback = start_test3.setup_game_tests(3, "Unimproved Range.txt", "txt", False)
 hand_num = 0
 while hand_num < 21:
-    hand_num = test3.play_hand(a, b, c, d, 4)
+    hand_num = start_test3.play_hand(num_players, range, file_extension, show_feedback, 4)
 
 # Testing a mix of setup parameters that have not already been selected for other tests.
-test4 = AppSystemTests()
-a, b, c, d = test4.setup_game_tests(5, "Starting Hands EV Range.txt", "csv", True)
+start_test4 = AppSystemTests()
+num_players, range, file_extension, show_feedback = start_test4.setup_game_tests(5, "Starting Hands EV Range.txt", "csv", True)
 hand_num = 0
 while hand_num < 21:
-    hand_num = test4.play_hand(a, b, c, d, 4)
+    hand_num = start_test4.play_hand(num_players, range, file_extension, show_feedback, 4)
 
 
 """Testing performance of system.
@@ -100,8 +100,8 @@ unnecessary to do this type of testing if the tests above aren't working. The fo
 4) 52 minutes for 1 million hands with a file size of 114,312KB."""
 
 # Only running 200 times here to show the concept.
-test5 = AppSystemTests()
-a, b, c, d = test5.setup_game_tests(9, "Starting Hands EV Range.txt", "csv", True)
+start_test5 = AppSystemTests()
+num_players, range, file_extension, show_feedback = start_test5.setup_game_tests(9, "Starting Hands EV Range.txt", "csv", True)
 hand_num = 0
 while hand_num < 201:
-    hand_num = test5.play_hand(a, b, c, d, 4)
+    hand_num = start_test5.play_hand(num_players, range, file_extension, show_feedback, 4)

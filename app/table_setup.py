@@ -3,16 +3,25 @@ import sys, os
 from game_setup import GameSetup, app_setup
 
 
-a = GameSetup(app_setup)
-b, c, d, e = a.start_playing()
+class PlayGame(object):
+    def __init__(self, score=0, hand_num=1):
+        self.score = score
+        self.hand_num = hand_num
 
-table_size = b
-feedback = e
+    def get_score(self):
+        return int(self.score)
+
+    def get_hand_num(self):
+        return int(self.hand_num)
+
+start_game = GameSetup(app_setup)
+num_players, range, file_extension, show_feedback = start_game.setup_game()
+
 
 window = pyglet.window.Window(width=1050, height=700, caption="No Limit Texas Hold'em Preflop Range Trainer: Test Range")
 
 current_dir = sys.path[0]
-img_path = os.path.join(current_dir, "../images/tables/" + str(table_size) + "_Handed.png")
+img_path = os.path.join(current_dir, "../images/tables/" + str(num_players) + "_Handed.png")
 
 table_image = pyglet.image.load(img_path)
 
@@ -51,7 +60,7 @@ def on_draw():
     open_label.draw()
     fold_label.draw()
 
-    if feedback:
+    if show_feedback:
         feedback_label.draw()
 
 pyglet.app.run()
