@@ -74,4 +74,4 @@ class TableSetup(object):
 
 # start_game = GameSetup(app_setup)
 # num_players, range, file_extension, show_feedback = start_game.setup_game()
-a = TableSetup(7, False).create_table()
+a = TableSetup(5, True).create_table()

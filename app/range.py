@@ -36,8 +36,9 @@ class Range(object):
                     pass
                 else:
                     my_range.readline()[-1]  # Once here we always want to trigger an index error.
+                    # If I return this to get rid of the warning it causes problems later because a '\n' is added. Also, if I remove the else part entirely a different, less helpful Index Error message is displayed.
         except IOError as ex:
-            tkinter.messagebox.showerror("ERROR! Unable to read the file.", "Please fix the spelling of the text file name and then start the game again.\n\n" + str(ex))
+            tkinter.messagebox.showerror("ERROR! Unable to read the file.", "Please fix the spelling of the text file name and then start the game again. Remember, the file extension should be '.txt'.\n\n" + str(ex))
             sys.exit()
         except IndexError as ex:
             tkinter.messagebox.showerror("ERROR! The first line in the file isn't in the correct format.", error_notes + "\n\nPython exception message: " + str(ex))
@@ -53,6 +54,9 @@ class Range(object):
         counter = 0
         total_cards = 0
         is_error = False
+        error_count = 0
+        error_total = 0
+
         with open(file, "r") as my_range:
             for line in my_range:
                 counter += 1
@@ -83,15 +87,18 @@ class Range(object):
                         num_cards = 12
                         total_cards += num_cards
                     total_cards = total_cards
+
             if counter != 169:
                 error_count = "There are 169 different hand types in a range.\n" \
                               "Your file has " + str(counter) + " lines.\n"
                 is_error = True
+
             if total_cards != 1326:
                 error_total = "There are 1,326 different card combinations in a range.\n" \
                               "Your file has " + str(format(total_cards, ",d")) + ".\n" \
                               "Hint: This most likely means that you have a duplicate hand type somewhere in your range if this is the only error."
                 is_error = True
+
             if is_error:
                 tkinter.messagebox.showerror("ERROR! Problem with data in file.", error_count + "\n" + error_total + "\n\n" + error_notes)
                 sys.exit()

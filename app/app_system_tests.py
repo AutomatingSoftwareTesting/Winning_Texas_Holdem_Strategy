@@ -15,9 +15,13 @@ class AppSystemTests(object):
     moves key setup items later, #2 will also happen, 4) the outputted data simulates 'real' results that someone could further analyze for varying reasons; i.e. the customer, software manager, manual quality
     assurance tester, 5) this could help troubleshoot performance issues with hardware (and if valid networks, databases), etc., and 6) this simulates gui user selection options."""
 
-    def __init__(self, score=0, hand_num=1):
+    def __init__(self, num_players=6, hand_range="Unimproved Range.txt", file_extension=".csv", show_feedback=True, score=0, hand_number=1):
         self.score = score
-        self.hand_num = hand_num
+        self.hand_num = hand_number
+        self.num_players = num_players
+        self.hand_range = hand_range
+        self.file_extension = file_extension
+        self.show_feedback = show_feedback
 
     # System setup folder location checks
     if len(os.listdir("..\\images\\cards")) != 52:
@@ -27,12 +31,13 @@ class AppSystemTests(object):
     if len(os.listdir("..\\hand_ranges")) < 1:
         print("Something is wrong with the setup. There aren't any ranges in the hand_ranges folder.")
 
-    def setup_game_tests(self, session_players, session_range, output_format, show_feedback):
-        feedback_file = FeedbackFile(session_players, output_format)
-        feedback_file.create_feedback_file()
-        return session_players, session_range, feedback_file, show_feedback
+    def test_setup_game(self):
+        full_file_name = FeedbackFile(self.num_players, self.file_extension)
+        if self.show_feedback:  # Create feedback file only if user wants it. This will also allow non-Windows machines to play; just without feedback.
+            full_file_name.create_feedback_file()
+        return full_file_name
 
-    def play_hand(self, session_players, session_range, feedback_file, show_feedback, action):  # Adding the action to simulate faster input of '4' = open and '6' = close.
+    def play_hand(self, feedback_file_name, action):
         date_time = datetime.datetime.now().strftime("%m-%d-%y %H:%M:%S")
         deck = Deck()
         deck.create()
@@ -40,28 +45,27 @@ class AppSystemTests(object):
         hand = Hand()
         hand.get_hand(deck)
         hand.order_hand()
-        type = hand.hand_type()
+        hand_type = hand.hand_type()
         position = Position()
-        position.current_position(session_players)
+        position.current_position(self.num_players)
         position_min = position.min_open()
-        r = Range(session_range)
-        correct_decision, hand_percent, total_cards = r.correct_decision(type, position_min)
+        r = Range(self.hand_range)
+        correct_decision, hand_percent, total_cards = r.correct_decision(hand_type, position_min)
         min_open_hand = r.min_open_card(position_min)
         decision = Decision(action).decision()
-        # show_feedback = True  # This setting is only used in the gui so there isn't any additional test for it here.
 
-        if show_feedback:
+        if self.show_feedback:
             if decision == correct_decision:
                 feedback = "Correct"  # report feedback
                 self.score += 1
             else:
                 feedback = "Incorrect"  # report feedback
-            feedback_file.save_hand(self.hand_num, date_time, session_range, feedback, position, position_min, min_open_hand, hand, type, hand_percent, decision, correct_decision, self.score)
+            feedback_file_name.save_hand(self.hand_num, date_time, self.hand_range, feedback, position, position_min, min_open_hand, hand, hand_type, hand_percent, decision, correct_decision, self.score)
+            self.hand_num += 1
+        else:
             self.hand_num += 1
 
         return self.hand_num
-
-
 
 
 """These tests could be done several different ways depending on who they are for and what is need. I'm displaying them below to show the general idea of each test. Note: Some of these tests don't really make
@@ -69,32 +73,39 @@ sense in a simplified example such as this project. However, the ideas would sti
 different types of databases/operating systems, etc., involved."""
 
 # Testing default setup parameters in the gui.
-start_test1 = AppSystemTests()
-num_players, range, file_extension, show_feedback = start_test1.setup_game_tests(6, "Unimproved Range.txt", "csv", True)
+start_test1 = AppSystemTests(6, "Unimproved Range.txt", "csv", True)
+feedback_file = start_test1.test_setup_game()
 hand_num = 0
 while hand_num < 21:
-    hand_num = start_test1.play_hand(num_players, range, file_extension, show_feedback, 6)
+    hand_num = start_test1.play_hand(feedback_file, 6)
 
 # Testing non-default setup parameters.
-start_test2 = AppSystemTests()
-num_players, range, file_extension, show_feedback = start_test2.setup_game_tests(10, "Starting Hands EV Range.txt", "txt", False)
+start_test2 = AppSystemTests(10, "Starting Hands EV Range.txt", "txt", True)
+feedback_file = start_test2.test_setup_game()
 hand_num = 0
 while hand_num < 21:
-    hand_num = start_test2.play_hand(num_players, range, file_extension, show_feedback, 6)
+    hand_num = start_test2.play_hand(feedback_file, 6)
 
 # Testing the min player size. Note: with manual bounds testing would also test the number of players that aren't valid (2, 11, d); however, instead made it impossible to enter these values in the gui.
-start_test3 = AppSystemTests()
-num_players, range, file_extension, show_feedback = start_test3.setup_game_tests(3, "Unimproved Range.txt", "txt", False)
+start_test3 = AppSystemTests(3, "Unimproved Range.txt", "txt", True)
+feedback_file = start_test3.test_setup_game()
 hand_num = 0
 while hand_num < 21:
-    hand_num = start_test3.play_hand(num_players, range, file_extension, show_feedback, 4)
+    hand_num = start_test3.play_hand(feedback_file, 4)
 
 # Testing a mix of setup parameters that have not already been selected for other tests.
-start_test4 = AppSystemTests()
-num_players, range, file_extension, show_feedback = start_test4.setup_game_tests(5, "Starting Hands EV Range.txt", "csv", True)
+start_test4 = AppSystemTests(5, "Starting Hands EV Range.txt", "csv", True)
+feedback_file = start_test4.test_setup_game()
 hand_num = 0
 while hand_num < 21:
-    hand_num = start_test4.play_hand(num_players, range, file_extension, show_feedback, 4)
+    hand_num = start_test4.play_hand(feedback_file, 4)
+
+# Testing that no report is generated (7 is a unique number so if this is working no report should start with 7 in the hand_range folder). This also means the user won't see feedback on the screen.
+start_test6 = AppSystemTests(7, "Unimproved Range.txt", "txt", False)
+feedback_file = start_test6.test_setup_game()
+hand_num = 0
+while hand_num < 21:
+    hand_num = start_test6.play_hand(feedback_file, 4)
 
 
 """Testing performance of system.
@@ -104,29 +115,8 @@ unnecessary to do this type of testing if the tests above aren't working. The fo
 4) 52 minutes for 1 million hands with a file size of 114,312KB."""
 
 # Only running 200 times here to show the concept.
-start_test5 = AppSystemTests()
-num_players, range, file_extension, show_feedback = start_test5.setup_game_tests(9, "Starting Hands EV Range.txt", "csv", True)
+start_test5 = AppSystemTests(9, "Starting Hands EV Range.txt", "csv", True)
+feedback_file = start_test5.test_setup_game()
 hand_num = 0
 while hand_num < 201:
-    hand_num = start_test5.play_hand(num_players, range, file_extension, show_feedback, 4)
-
-
-# def test_application(self):
-#     from app_no_gui import PlayGame
-#
-#     # System setup folder location checks
-#     if len(os.listdir("..\\images\\cards")) != 52:
-#         print("Something is wrong with the setup. There aren't 52 cards in the images -> cards folder.")
-#     if len(os.listdir("..\\images\\tables")) != 9:
-#         print("Something is wrong with the setup. There aren't 9 tables in the images -> tables folder.")
-#     if len(os.listdir("..\\hand_ranges")) < 1:
-#         print("Something is wrong with the setup. There aren't any ranges in the hand_ranges folder.")
-#
-#     return PlayGame()
-#
-#
-# start = AppSystemTests().test_application()
-# np, r, f, sf = start.setup_game()
-# hand_num = 0
-# while hand_num < 21:
-#     hand_num = start.play_hand(np, r, f, sf, 6)
+    hand_num = start_test5.play_hand(feedback_file, 4)
