@@ -8,7 +8,7 @@ from app.feedback_file import FeedbackFile
 import os
 
 
-class ApplicationSystemTests(object):
+class AppSystemTests(object):
     """This module is different from the rest of the application and is intended to show some concepts related to testing the whole system. This will create 5 different reports in the user's report folder.
     Additional information about the setup scenarios for each of the reports is below. Some key ideas: 1) this runs in a 'live' environment and touches all of the critical functionality of the application,
     2) if there are serious errors in any of the modules none of the reports will output (and there should be an exception somewhere to analyze and fix), 3) if someone implements the system incorrectly, or
@@ -65,28 +65,28 @@ sense in a simplified example such as this project. However, the ideas would sti
 different types of databases/operating systems, ect, involved."""
 
 # Testing default setup parameters in the gui.
-test1 = ApplicationSystemTests()
+test1 = AppSystemTests()
 a, b, c, d = test1.setup_game_tests(6, "Unimproved Range.txt", "csv", True)
 hand_num = 0
 while hand_num < 21:
     hand_num = test1.play_hand(a, b, c, d, 6)
 
 # Testing non-default setup parameters.
-test2 = ApplicationSystemTests()
+test2 = AppSystemTests()
 a, b, c, d = test2.setup_game_tests(10, "Starting Hands EV Range.txt", "txt", False)
 hand_num = 0
 while hand_num < 21:
     hand_num = test2.play_hand(a, b, c, d, 6)
 
 # Testing the min player size. Note: with manual bounds testing would also test the number of players that aren't valid (2, 11, d); however, instead made it impossible to enter these values in the gui.
-test3 = ApplicationSystemTests()
+test3 = AppSystemTests()
 a, b, c, d = test3.setup_game_tests(3, "Unimproved Range.txt", "txt", False)
 hand_num = 0
 while hand_num < 21:
     hand_num = test3.play_hand(a, b, c, d, 4)
 
 # Testing a mix of setup parameters that have not already been selected for other tests.
-test4 = ApplicationSystemTests()
+test4 = AppSystemTests()
 a, b, c, d = test4.setup_game_tests(5, "Starting Hands EV Range.txt", "csv", True)
 hand_num = 0
 while hand_num < 21:
@@ -100,7 +100,7 @@ unnecessary to do this type of testing if the tests above aren't working. The fo
 4) 52 minutes for 1 million hands with a file size of 114,312KB."""
 
 # Only running 200 times here to show the concept.
-test5 = ApplicationSystemTests()
+test5 = AppSystemTests()
 a, b, c, d = test5.setup_game_tests(9, "Starting Hands EV Range.txt", "csv", True)
 hand_num = 0
 while hand_num < 201:
