@@ -13,7 +13,8 @@ class AppSystemTests(object):
     Additional information about the setup scenarios for each of the reports is below. Some key ideas: 1) this runs in a 'live' environment and touches all of the critical functionality of the application,
     2) if there are serious errors in any of the modules, none of the reports will output and there should be an exception somewhere to analyze and fix, 3) if someone implements the system incorrectly, or
     moves key setup items later, #2 will also happen, 4) the outputted data simulates 'real' results that someone could further analyze for varying reasons; i.e. the customer, software manager, manual quality
-    assurance tester, 5) this could help troubleshoot performance issues with hardware (and if valid networks, databases), etc., and 6) this simulates gui user selection options."""
+    assurance tester, 5) this could help troubleshoot performance issues with hardware (and if valid networks, databases), etc., and 6) this simulates gui user selection options.
+    If the future want to change this so it runs against app_no_gui code. Several things in the play hand section have to be updated only here for that to work."""
 
     def __init__(self, num_players=6, hand_range="Unimproved Range.txt", file_extension=".csv", show_feedback=True, score=0, hand_number=1):
         self.score = score
