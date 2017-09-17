@@ -14,6 +14,7 @@ class AppSystemTests(object):
     2) if there are serious errors in any of the modules, none of the reports will output and there should be an exception somewhere to analyze and fix, 3) if someone implements the system incorrectly, or
     moves key setup items later, #2 will also happen, 4) the outputted data simulates 'real' results that someone could further analyze for varying reasons; i.e. the customer, software manager, manual quality
     assurance tester, 5) this could help troubleshoot performance issues with hardware (and if valid networks, databases), etc., and 6) this simulates gui user selection options."""
+
     def __init__(self, score=0, hand_num=1):
         self.score = score
         self.hand_num = hand_num
@@ -47,17 +48,20 @@ class AppSystemTests(object):
         correct_decision, hand_percent, total_cards = r.correct_decision(type, position_min)
         min_open_hand = r.min_open_card(position_min)
         decision = Decision(action).decision()
-        show_feedback = True  # This setting is only used in the gui so there isn't any additional test for it here.
+        # show_feedback = True  # This setting is only used in the gui so there isn't any additional test for it here.
 
-        if decision == correct_decision:
-            feedback = "Correct"  # report feedback
-            self.score += 1
-        else:
-            feedback = "Incorrect"  # report feedback
-        feedback_file.save_hand(self.hand_num, date_time, session_range, feedback, position, position_min, min_open_hand, hand, type, hand_percent, decision, correct_decision, self.score)
-        self.hand_num += 1
+        if show_feedback:
+            if decision == correct_decision:
+                feedback = "Correct"  # report feedback
+                self.score += 1
+            else:
+                feedback = "Incorrect"  # report feedback
+            feedback_file.save_hand(self.hand_num, date_time, session_range, feedback, position, position_min, min_open_hand, hand, type, hand_percent, decision, correct_decision, self.score)
+            self.hand_num += 1
 
         return self.hand_num
+
+
 
 
 """These tests could be done several different ways depending on who they are for and what is need. I'm displaying them below to show the general idea of each test. Note: Some of these tests don't really make
@@ -105,3 +109,24 @@ num_players, range, file_extension, show_feedback = start_test5.setup_game_tests
 hand_num = 0
 while hand_num < 201:
     hand_num = start_test5.play_hand(num_players, range, file_extension, show_feedback, 4)
+
+
+# def test_application(self):
+#     from app_no_gui import PlayGame
+#
+#     # System setup folder location checks
+#     if len(os.listdir("..\\images\\cards")) != 52:
+#         print("Something is wrong with the setup. There aren't 52 cards in the images -> cards folder.")
+#     if len(os.listdir("..\\images\\tables")) != 9:
+#         print("Something is wrong with the setup. There aren't 9 tables in the images -> tables folder.")
+#     if len(os.listdir("..\\hand_ranges")) < 1:
+#         print("Something is wrong with the setup. There aren't any ranges in the hand_ranges folder.")
+#
+#     return PlayGame()
+#
+#
+# start = AppSystemTests().test_application()
+# np, r, f, sf = start.setup_game()
+# hand_num = 0
+# while hand_num < 21:
+#     hand_num = start.play_hand(np, r, f, sf, 6)
