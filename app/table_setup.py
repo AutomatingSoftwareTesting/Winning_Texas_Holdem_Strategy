@@ -3,6 +3,7 @@ import sys
 import os
 from deck import Deck
 from hand import Hand
+from position import Position
 
 
 class TableSetup(object):
@@ -60,12 +61,49 @@ class TableSetup(object):
         img_card2 = os.path.join(current_dir, "../images/cards/" + str(card2) + ".png")
         card2_image = pyglet.image.load(img_card2)
 
+        hand.order_hand()
+        hand_type = hand.hand_type()
+
+        position = Position()
+        position.current_position(self.num_players)
+        print(position)
+
+        position_min = position.min_open()
+
+        position = str(position)
+
         @window.event()
         def on_draw():
             window.clear()
-            table_image.blit(10, 50)
-            card1_image.blit(20, 70)
-            card2_image.blit(50, 70)
+            table_image.blit(60, 60)
+
+            if position == "Button":
+                card1_image.blit(680, 70)
+                card2_image.blit(740, 70)
+            elif position == "Cut Off":
+                card1_image.blit(820, 170)
+                card2_image.blit(880, 170)
+            elif position == "High Jack":
+                card1_image.blit(820, 320)
+                card2_image.blit(880, 320)
+            elif position == "Low Jack":
+                card1_image.blit(680, 400)
+                card2_image.blit(740, 400)
+            elif position == "5 Off Button":
+                card1_image.blit(440, 400)
+                card2_image.blit(500, 400)
+            elif position == "6 Off Button":
+                card1_image.blit(260, 400)
+                card2_image.blit(320, 400)
+            elif position == "7 Off Button":
+                card1_image.blit(120, 320)
+                card2_image.blit(150, 320)
+            elif position == "8 Off Button":
+                card1_image.blit(120, 170)
+                card2_image.blit(150, 170)
+            else:
+                print("Sorry, don't know which position you are sitting at.")
+
 
             hand_label = pyglet.text.Label("Hand: " + str(self.hand_num),
                                            font_name="Arial",
