@@ -1,6 +1,8 @@
 import pyglet
 import sys
 import os
+from deck import Deck
+from hand import Hand
 
 
 class TableSetup(object):
@@ -31,7 +33,7 @@ class TableSetup(object):
         return self.show_feedback
 
     def create_table(self):
-        window = pyglet.window.Window(width=1050, height=700, caption="No Limit Texas Hold'em Preflop Range Trainer: Test Range")
+        window = pyglet.window.Window(width=1050, height=700, caption="No Limit Texas Hold'em Preflop Range Trainer: " + self.hand_range)
         # The size of the screens for the game setup and table setups are different; however, they are specific sizes (fixed) for the information they display.
         # Will work with dynamically sized screens in a future project.
 
@@ -40,10 +42,30 @@ class TableSetup(object):
 
         table_image = pyglet.image.load(img_path)
 
+        deck = Deck()
+        deck.create()
+        deck.shuffle()
+
+        hand = Hand()
+        hand.get_hand(deck)
+        print(hand)
+
+        card1 = hand.hole_cards[0]
+        card2 = hand.hole_cards[1]
+        print(card1)
+        print(card2)
+
+        img_card1 = os.path.join(current_dir, "../images/cards/" + str(card1) + ".png")
+        card1_image = pyglet.image.load(img_card1)
+        img_card2 = os.path.join(current_dir, "../images/cards/" + str(card2) + ".png")
+        card2_image = pyglet.image.load(img_card2)
+
         @window.event()
         def on_draw():
             window.clear()
             table_image.blit(10, 50)
+            card1_image.blit(20, 70)
+            card2_image.blit(50, 70)
 
             hand_label = pyglet.text.Label("Hand: " + str(self.hand_num),
                                            font_name="Arial",

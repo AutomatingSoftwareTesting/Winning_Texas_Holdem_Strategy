@@ -74,7 +74,7 @@ class GameSetup(Frame):
         self.is_feedback = BooleanVar()
 
         Checkbutton(self, text="Display decision feedback at the table?", font="bold", variable=self.is_feedback).grid(row=5, column=0, sticky=W, pady=10)
-        self.is_feedback.set(1)  # '1' shows feedback by default (checks the box); '0' doesn't
+        self.is_feedback.set(0)  # '1' shows feedback by default (checks the box); '0' doesn't
 
         image_file_path = DirNav().get_path("tables")
         self.button_image = PhotoImage(file=image_file_path + "table_icon.png")
