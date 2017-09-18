@@ -1,7 +1,6 @@
 import pyglet
 import sys
 import os
-from game_setup import GameSetup, app_setup
 
 
 class TableSetup(object):
@@ -33,7 +32,8 @@ class TableSetup(object):
 
     def create_table(self):
         window = pyglet.window.Window(width=1050, height=700, caption="No Limit Texas Hold'em Preflop Range Trainer: Test Range")
-        # The size of the screens for the game setup and table setups are different; however, they are specific sizes for the information they display. In a future project, will work with dynamically sized screens.
+        # The size of the screens for the game setup and table setups are different; however, they are specific sizes (fixed) for the information they display.
+        # Will work with dynamically sized screens in a future project.
 
         current_dir = sys.path[0]
         img_path = os.path.join(current_dir, "../images/tables/" + str(self.num_players) + "_Handed.png")
@@ -45,12 +45,12 @@ class TableSetup(object):
             window.clear()
             table_image.blit(10, 50)
 
-            hand_label = pyglet.text.Label("Hand: " + str(self.hand_num),  # Will change to var later
+            hand_label = pyglet.text.Label("Hand: " + str(self.hand_num),
                                            font_name="Arial",
                                            font_size=18,
                                            x=20, y=50)
 
-            score_label = pyglet.text.Label("Score: " + str(self.score),  # Will change to var later
+            score_label = pyglet.text.Label("Score: " + str(self.score),
                                             font_name="Arial",
                                             font_size=18,
                                             x=20, y=20)
@@ -79,8 +79,3 @@ class TableSetup(object):
                 feedback_label.draw()
 
         pyglet.app.run()
-
-
-# start_game = GameSetup(app_setup)
-# num_players, range, file_extension, show_feedback = start_game.setup_game()
-TableSetup(GameSetup(app_setup).setup_game()).create_table()

@@ -1,0 +1,201 @@
+Hand Number,Date/Time,Range File,Feedback,Position,Position Percentage,Min Opening Hand Type,Hole Cards,Hand Type,Hand Ranking Percentage,Your Decision,Correct Decision,Score
+1,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,Cut Off,25.00,K4s,7h 3c ,73o,71.04,open,fold,0
+2,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,Low Jack,16.67,55,9h 5s ,95o,62.59,open,fold,0
+3,09-18-17 09:01:11,Starting Hands EV Range.txt,Correct,Low Jack,16.67,55,8c 8d ,88,6.79,open,open,1
+4,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,High Jack,20.00,QTo,Kc 6c ,K6s,24.28,open,fold,1
+5,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,Kh Td ,KTo,18.10,open,fold,1
+6,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,Cut Off,25.00,K4s,As 3c ,A3o,79.19,open,fold,1
+7,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,Jd 6d ,J6s,43.59,open,fold,1
+8,09-18-17 09:01:11,Starting Hands EV Range.txt,Correct,Low Jack,16.67,55,Qd Qs ,QQ,1.36,open,open,2
+9,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,6 Off Button,12.50,A5s,Qd 7h ,Q7o,54.75,open,fold,2
+10,09-18-17 09:01:11,Starting Hands EV Range.txt,Correct,6 Off Button,12.50,A5s,9d 9c ,99,4.83,open,open,3
+11,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,6 Off Button,12.50,A5s,Qd 5c ,Q5o,82.81,open,fold,3
+12,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,Button,33.33,Q5s,8s 2c ,82o,69.23,open,fold,3
+13,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,Cut Off,25.00,K4s,9s 5s ,95s,62.90,open,fold,3
+14,09-18-17 09:01:11,Starting Hands EV Range.txt,Correct,Button,33.33,Q5s,Ts 8s ,T8s,19.31,open,open,4
+15,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,As 5h ,A5o,52.04,open,fold,4
+16,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,Cut Off,25.00,K4s,Tc 6s ,T6o,45.10,open,fold,4
+17,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,Low Jack,16.67,55,Th 7s ,T7o,38.46,open,fold,4
+18,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,Th 4s ,T4o,58.97,open,fold,4
+19,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,Th 4c ,T4o,58.97,open,fold,4
+20,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,High Jack,20.00,QTo,Ks 2c ,K2o,94.27,open,fold,4
+21,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,6 Off Button,12.50,A5s,Ks 7s ,K7s,19.00,open,fold,4
+22,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,Button,33.33,Q5s,8c 5c ,85s,47.51,open,fold,4
+23,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,Jd 4h ,J4o,87.33,open,fold,4
+24,09-18-17 09:01:11,Starting Hands EV Range.txt,Correct,High Jack,20.00,QTo,Qh Th ,QTs,8.90,open,open,5
+25,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,9d 3s ,93o,64.71,open,fold,5
+26,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,Ac 4h ,A4o,52.94,open,fold,5
+27,09-18-17 09:01:11,Starting Hands EV Range.txt,Correct,High Jack,20.00,QTo,Qc Qh ,QQ,1.36,open,open,6
+28,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,Low Jack,16.67,55,8c 7c ,87s,21.12,open,fold,6
+29,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,Tc 8s ,T8o,34.54,open,fold,6
+30,09-18-17 09:01:11,Starting Hands EV Range.txt,Correct,High Jack,20.00,QTo,Ac Kc ,AKs,2.11,open,open,7
+31,09-18-17 09:01:11,Starting Hands EV Range.txt,Correct,7 Off Button,11.11,K9s,Qh Jh ,QJs,7.09,open,open,8
+32,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,Tc 3d ,T3o,59.88,open,fold,8
+33,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,Kd 6h ,K6o,53.85,open,fold,8
+34,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,Button,33.33,Q5s,5c 4s ,54o,91.25,open,fold,8
+35,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,High Jack,20.00,QTo,Qc 3h ,Q3o,84.62,open,fold,8
+36,09-18-17 09:01:11,Starting Hands EV Range.txt,Correct,Button,33.33,Q5s,Ad 9h ,A9o,22.47,open,open,9
+37,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,6 Off Button,12.50,A5s,6d 5d ,65s,28.96,open,fold,9
+38,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,High Jack,20.00,QTo,6d 3c ,63o,74.66,open,fold,9
+39,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,6 Off Button,12.50,A5s,6s 6d ,66,13.12,open,fold,9
+40,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,Button,33.33,Q5s,Kc 5d ,K5o,80.09,open,fold,9
+41,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,7c 6d ,76o,48.42,open,fold,9
+42,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,9d 7h ,97o,40.27,open,fold,9
+43,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,Cut Off,25.00,K4s,9s 7h ,97o,40.27,open,fold,9
+44,09-18-17 09:01:11,Starting Hands EV Range.txt,Correct,5 Off Button,14.29,A4s,Ac Js ,AJo,8.30,open,open,10
+45,09-18-17 09:01:11,Starting Hands EV Range.txt,Correct,7 Off Button,11.11,K9s,As Qs ,AQs,2.41,open,open,11
+46,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,Cut Off,25.00,K4s,8h 5h ,85s,47.51,open,fold,11
+47,09-18-17 09:01:11,Starting Hands EV Range.txt,Correct,Cut Off,25.00,K4s,Kd 8d ,K8s,18.40,open,open,12
+48,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,High Jack,20.00,QTo,Ad 3h ,A3o,79.19,open,fold,12
+49,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,Cut Off,25.00,K4s,7s 4d ,74o,70.14,open,fold,12
+50,09-18-17 09:01:11,Starting Hands EV Range.txt,Correct,Cut Off,25.00,K4s,Qc Js ,QJo,16.44,open,open,13
+51,09-18-17 09:01:11,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,Kh 9s ,K9o,28.05,open,fold,13
+52,09-18-17 09:01:11,Starting Hands EV Range.txt,Correct,Cut Off,25.00,K4s,Ac Th ,ATo,12.07,open,open,14
+53,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Cut Off,25.00,K4s,Kc 6d ,K6o,53.85,open,fold,14
+54,09-18-17 09:01:12,Starting Hands EV Range.txt,Correct,Button,33.33,Q5s,Kh 5h ,K5s,24.89,open,open,15
+55,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Cut Off,25.00,K4s,6h 4s ,64o,73.76,open,fold,15
+56,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,High Jack,20.00,QTo,Tc 2c ,T2s,94.87,open,fold,15
+57,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,Js 7d ,J7o,55.96,open,fold,15
+58,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,6d 5c ,65o,72.85,open,fold,15
+59,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,6 Off Button,12.50,A5s,Ks 8s ,K8s,18.40,open,fold,15
+60,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,6 Off Button,12.50,A5s,Th 4d ,T4o,58.97,open,fold,15
+61,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,Kc 9c ,K9s,11.16,open,fold,15
+62,09-18-17 09:01:12,Starting Hands EV Range.txt,Correct,Cut Off,25.00,K4s,As 9d ,A9o,22.47,open,open,16
+63,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Cut Off,25.00,K4s,8h 2h ,82s,95.78,open,fold,16
+64,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,Ad 5h ,A5o,52.04,open,fold,16
+65,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,6 Off Button,12.50,A5s,Qc 8s ,Q8o,42.99,open,fold,16
+66,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,High Jack,20.00,QTo,9s 5s ,95s,62.90,open,fold,16
+67,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Button,33.33,Q5s,Ad 7c ,A7o,36.35,open,fold,16
+68,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,Kd 4c ,K4o,81.00,open,fold,16
+69,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Cut Off,25.00,K4s,5h 4s ,54o,91.25,open,fold,16
+70,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Button,33.33,Q5s,6h 2s ,62o,75.57,open,fold,16
+71,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,Ad 7s ,A7o,36.35,open,fold,16
+72,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Low Jack,16.67,55,7s 3h ,73o,71.04,open,fold,16
+73,09-18-17 09:01:12,Starting Hands EV Range.txt,Correct,High Jack,20.00,QTo,Kh Th ,KTs,7.39,open,open,17
+74,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,Qc 4d ,Q4o,83.71,open,fold,17
+75,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,6 Off Button,12.50,A5s,Tc 9h ,T9o,32.58,open,fold,17
+76,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Button,33.33,Q5s,Ad 4s ,A4o,52.94,open,fold,17
+77,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,9d 7h ,97o,40.27,open,fold,17
+78,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Button,33.33,Q5s,Js 6d ,J6o,56.86,open,fold,17
+79,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,5c 4c ,54s,32.88,open,fold,17
+80,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,Kh 7h ,K7s,19.00,open,fold,17
+81,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Cut Off,25.00,K4s,9c 5s ,95o,62.59,open,fold,17
+82,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,High Jack,20.00,QTo,Jc 5c ,J5s,43.89,open,fold,17
+83,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,Jc 2h ,J2o,89.44,open,fold,17
+84,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,High Jack,20.00,QTo,Qh 5h ,Q5s,33.63,open,fold,17
+85,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,Ad 6d ,A6s,15.54,open,fold,17
+86,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Button,33.33,Q5s,Jc 7s ,J7o,55.96,open,fold,17
+87,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,3c 2s ,32o,97.89,open,fold,17
+88,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Button,33.33,Q5s,Jh 5c ,J5o,86.43,open,fold,17
+89,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,3h 2s ,32o,97.89,open,fold,17
+90,09-18-17 09:01:12,Starting Hands EV Range.txt,Correct,6 Off Button,12.50,A5s,As Jc ,AJo,8.30,open,open,18
+91,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,High Jack,20.00,QTo,Kh 5d ,K5o,80.09,open,fold,18
+92,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,High Jack,20.00,QTo,Jd 7d ,J7s,28.36,open,fold,18
+93,09-18-17 09:01:12,Starting Hands EV Range.txt,Correct,Cut Off,25.00,K4s,Ah 4h ,A4s,14.33,open,open,19
+94,09-18-17 09:01:12,Starting Hands EV Range.txt,Correct,Cut Off,25.00,K4s,Ac Jd ,AJo,8.30,open,open,20
+95,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,High Jack,20.00,QTo,Jc 2c ,J2s,94.57,open,fold,20
+96,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Button,33.33,Q5s,Qs 5d ,Q5o,82.81,open,fold,20
+97,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Low Jack,16.67,55,9d 3h ,93o,64.71,open,fold,20
+98,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Low Jack,16.67,55,3d 2s ,32o,97.89,open,fold,20
+99,09-18-17 09:01:12,Starting Hands EV Range.txt,Correct,Button,33.33,Q5s,Ah Kc ,AKo,3.77,open,open,21
+100,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Cut Off,25.00,K4s,8s 2d ,82o,69.23,open,fold,21
+101,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,7c 5d ,75o,49.32,open,fold,21
+102,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Low Jack,16.67,55,Qd 2h ,Q2o,85.52,open,fold,21
+103,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,Td 3h ,T3o,59.88,open,fold,21
+104,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,6 Off Button,12.50,A5s,6c 6h ,66,13.12,open,fold,21
+105,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,7s 6d ,76o,48.42,open,fold,21
+106,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Cut Off,25.00,K4s,Qs 6d ,Q6o,81.90,open,fold,21
+107,09-18-17 09:01:12,Starting Hands EV Range.txt,Correct,Button,33.33,Q5s,9s 9h ,99,4.83,open,open,22
+108,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Button,33.33,Q5s,Jd 2h ,J2o,89.44,open,fold,22
+109,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Button,33.33,Q5s,Qh 5h ,Q5s,33.63,open,fold,22
+110,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,5d 4d ,54s,32.88,open,fold,22
+111,09-18-17 09:01:12,Starting Hands EV Range.txt,Correct,7 Off Button,11.11,K9s,Ah Jd ,AJo,8.30,open,open,23
+112,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,6d 4c ,64o,73.76,open,fold,23
+113,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Low Jack,16.67,55,3s 2h ,32o,97.89,open,fold,23
+114,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,6 Off Button,12.50,A5s,Kd 8d ,K8s,18.40,open,fold,23
+115,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Cut Off,25.00,K4s,Td 5c ,T5o,57.77,open,fold,23
+116,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,High Jack,20.00,QTo,8s 5d ,85o,47.21,open,fold,23
+117,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Cut Off,25.00,K4s,Jh 4c ,J4o,87.33,open,fold,23
+118,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,High Jack,20.00,QTo,Ac 4d ,A4o,52.94,open,fold,23
+119,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Cut Off,25.00,K4s,Tc 2d ,T2o,60.78,open,fold,23
+120,09-18-17 09:01:12,Starting Hands EV Range.txt,Correct,Cut Off,25.00,K4s,Qs Qc ,QQ,1.36,open,open,24
+121,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Button,33.33,Q5s,Ks 5c ,K5o,80.09,open,fold,24
+122,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,7s 6c ,76o,48.42,open,fold,24
+123,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,Kh 4h ,K4s,25.19,open,fold,24
+124,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,High Jack,20.00,QTo,Qh 4s ,Q4o,83.71,open,fold,24
+125,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,High Jack,20.00,QTo,Qc 9s ,Q9o,30.47,open,fold,24
+126,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,6c 3d ,63o,74.66,open,fold,24
+127,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,6 Off Button,12.50,A5s,Qd Jh ,QJo,16.44,open,fold,24
+128,09-18-17 09:01:12,Starting Hands EV Range.txt,Correct,Cut Off,25.00,K4s,Ac Jc ,AJs,4.07,open,open,25
+129,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Low Jack,16.67,55,4c 4h ,44,21.57,open,fold,25
+130,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Button,33.33,Q5s,Th 3h ,T3s,90.05,open,fold,25
+131,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Cut Off,25.00,K4s,Qh 3h ,Q3s,43.29,open,fold,25
+132,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,Qc 8h ,Q8o,42.99,open,fold,25
+133,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Cut Off,25.00,K4s,7s 4s ,74s,49.62,open,fold,25
+134,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,High Jack,20.00,QTo,9s 6c ,96o,61.69,open,fold,25
+135,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Cut Off,25.00,K4s,Qh 5h ,Q5s,33.63,open,fold,25
+136,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Low Jack,16.67,55,Qc 3s ,Q3o,84.62,open,fold,25
+137,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,As 8d ,A8o,27.15,open,fold,25
+138,09-18-17 09:01:12,Starting Hands EV Range.txt,Correct,High Jack,20.00,QTo,Ac Qc ,AQs,2.41,open,open,26
+139,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,8h 5d ,85o,47.21,open,fold,26
+140,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,6 Off Button,12.50,A5s,Th 6d ,T6o,45.10,open,fold,26
+141,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,6 Off Button,12.50,A5s,9c 7s ,97o,40.27,open,fold,26
+142,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,8c 6c ,86s,28.66,open,fold,26
+143,09-18-17 09:01:12,Starting Hands EV Range.txt,Correct,6 Off Button,12.50,A5s,Js Ts ,JTs,10.56,open,open,27
+144,09-18-17 09:01:12,Starting Hands EV Range.txt,Correct,7 Off Button,11.11,K9s,Kh Ks ,KK,0.90,open,open,28
+145,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,Qh 6d ,Q6o,81.90,open,fold,28
+146,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,Ah 9c ,A9o,22.47,open,fold,28
+147,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Low Jack,16.67,55,9c 5c ,95s,62.90,open,fold,28
+148,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,6 Off Button,12.50,A5s,Kh 5d ,K5o,80.09,open,fold,28
+149,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,6 Off Button,12.50,A5s,9c 4d ,94o,63.80,open,fold,28
+150,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,6d 3s ,63o,74.66,open,fold,28
+151,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,6h 4c ,64o,73.76,open,fold,28
+152,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Cut Off,25.00,K4s,Qd 7d ,Q7s,25.79,open,fold,28
+153,09-18-17 09:01:12,Starting Hands EV Range.txt,Correct,Button,33.33,Q5s,Qs Ts ,QTs,8.90,open,open,29
+154,09-18-17 09:01:12,Starting Hands EV Range.txt,Correct,Button,33.33,Q5s,Ah Qc ,AQo,6.03,open,open,30
+155,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,9c 2h ,92o,65.61,open,fold,30
+156,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,Th 9c ,T9o,32.58,open,fold,30
+157,09-18-17 09:01:12,Starting Hands EV Range.txt,Correct,Button,33.33,Q5s,As 9c ,A9o,22.47,open,open,31
+158,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,3h 2d ,32o,97.89,open,fold,31
+159,09-18-17 09:01:12,Starting Hands EV Range.txt,Correct,Button,33.33,Q5s,Ts 9h ,T9o,32.58,open,open,32
+160,09-18-17 09:01:12,Starting Hands EV Range.txt,Correct,Cut Off,25.00,K4s,Ac Jc ,AJs,4.07,open,open,33
+161,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Low Jack,16.67,55,7h 4d ,74o,70.14,open,fold,33
+162,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,6h 5c ,65o,72.85,open,fold,33
+163,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Cut Off,25.00,K4s,Tc 6c ,T6s,45.40,open,fold,33
+164,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,7h 6d ,76o,48.42,open,fold,33
+165,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Low Jack,16.67,55,Kh 5c ,K5o,80.09,open,fold,33
+166,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Button,33.33,Q5s,8h 6d ,86o,46.30,open,fold,33
+167,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,6 Off Button,12.50,A5s,Qc 6c ,Q6s,30.77,open,fold,33
+168,09-18-17 09:01:12,Starting Hands EV Range.txt,Correct,Button,33.33,Q5s,Qs Qc ,QQ,1.36,open,open,34
+169,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,Td 9d ,T9s,14.93,open,fold,34
+170,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,9d 3s ,93o,64.71,open,fold,34
+171,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Low Jack,16.67,55,Qd 4s ,Q4o,83.71,open,fold,34
+172,09-18-17 09:01:12,Starting Hands EV Range.txt,Correct,7 Off Button,11.11,K9s,Ad Jh ,AJo,8.30,open,open,35
+173,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Low Jack,16.67,55,4c 3c ,43s,92.46,open,fold,35
+174,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,8c 6s ,86o,46.30,open,fold,35
+175,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,6 Off Button,12.50,A5s,Qh 7s ,Q7o,54.75,open,fold,35
+176,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Button,33.33,Q5s,9h 5s ,95o,62.59,open,fold,35
+177,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,High Jack,20.00,QTo,Qs 8c ,Q8o,42.99,open,fold,35
+178,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,Ac 3s ,A3o,79.19,open,fold,35
+179,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,High Jack,20.00,QTo,8h 4d ,84o,67.42,open,fold,35
+180,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,High Jack,20.00,QTo,Jd 9s ,J9o,31.67,open,fold,35
+181,09-18-17 09:01:12,Starting Hands EV Range.txt,Incorrect,Button,33.33,Q5s,Kd 2s ,K2o,94.27,open,fold,35
+182,09-18-17 09:01:13,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,8c 5s ,85o,47.21,open,fold,35
+183,09-18-17 09:01:13,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,9d 6c ,96o,61.69,open,fold,35
+184,09-18-17 09:01:13,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,Jh 4d ,J4o,87.33,open,fold,35
+185,09-18-17 09:01:13,Starting Hands EV Range.txt,Incorrect,Low Jack,16.67,55,5h 2d ,52o,77.38,open,fold,35
+186,09-18-17 09:01:13,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,Js 7c ,J7o,55.96,open,fold,35
+187,09-18-17 09:01:13,Starting Hands EV Range.txt,Incorrect,Low Jack,16.67,55,Jc 9d ,J9o,31.67,open,fold,35
+188,09-18-17 09:01:13,Starting Hands EV Range.txt,Correct,5 Off Button,14.29,A4s,Kc Qs ,KQo,10.26,open,open,36
+189,09-18-17 09:01:13,Starting Hands EV Range.txt,Incorrect,6 Off Button,12.50,A5s,Kd 6s ,K6o,53.85,open,fold,36
+190,09-18-17 09:01:13,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,Qh 2s ,Q2o,85.52,open,fold,36
+191,09-18-17 09:01:13,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,Qc Js ,QJo,16.44,open,fold,36
+192,09-18-17 09:01:13,Starting Hands EV Range.txt,Incorrect,6 Off Button,12.50,A5s,Tc 2d ,T2o,60.78,open,fold,36
+193,09-18-17 09:01:13,Starting Hands EV Range.txt,Incorrect,Cut Off,25.00,K4s,9h 7s ,97o,40.27,open,fold,36
+194,09-18-17 09:01:13,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,Qd 5s ,Q5o,82.81,open,fold,36
+195,09-18-17 09:01:13,Starting Hands EV Range.txt,Incorrect,Low Jack,16.67,55,Qd 9c ,Q9o,30.47,open,fold,36
+196,09-18-17 09:01:13,Starting Hands EV Range.txt,Incorrect,7 Off Button,11.11,K9s,Qs 2s ,Q2s,55.05,open,fold,36
+197,09-18-17 09:01:13,Starting Hands EV Range.txt,Incorrect,5 Off Button,14.29,A4s,9s 5d ,95o,62.59,open,fold,36
+198,09-18-17 09:01:13,Starting Hands EV Range.txt,Incorrect,Cut Off,25.00,K4s,Ad 4c ,A4o,52.94,open,fold,36
+199,09-18-17 09:01:13,Starting Hands EV Range.txt,Incorrect,Low Jack,16.67,55,8s 3s ,83s,99.40,open,fold,36
+200,09-18-17 09:01:13,Starting Hands EV Range.txt,Incorrect,Button,33.33,Q5s,Ac 5d ,A5o,52.04,open,fold,36

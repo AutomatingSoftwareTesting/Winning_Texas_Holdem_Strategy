@@ -16,7 +16,6 @@ class GameSetup(Frame):
         self.is_feedback = is_feedback
         self.button_image = button_image
         self.create_widgets()
-        app_setup.grid_columnconfigure(0, weight=1)
 
     def get_instructions_text(self):
         return self.instructions_text
@@ -75,32 +74,21 @@ class GameSetup(Frame):
         self.is_feedback = BooleanVar()
 
         Checkbutton(self, text="Display decision feedback at the table?", font="bold", variable=self.is_feedback).grid(row=5, column=0, sticky=W, pady=10)
-        self.is_feedback.set(1)
+        self.is_feedback.set(1)  # '1' shows feedback by default (checks the box); '0' doesn't
 
         image_file_path = DirNav().get_path("tables")
         self.button_image = PhotoImage(file=image_file_path + "table_icon.png")
-        Button(self, command=self.shutdown, text=" Start Playing", font=("Arial", 18), image=self.button_image, compound="left", width=250, height=60).grid(row=6, column=0, columnspan=3, pady=10)
+        Button(self, command=self.setup_game, text=" Start Playing", font=("Arial", 18), image=self.button_image, compound="left", width=250, height=60).grid(row=6, column=0, columnspan=3, pady=10)
 
     def setup_game(self):
+        from table_setup import TableSetup
+
         session_range = self.hand_range.get()
         app.range.Range(session_range).file_layout()
         session_players = self.num_players.get()
         output_format = self.file_extension.get()
         show_feedback = self.is_feedback.get()
         feedback_file = app.feedback_file.FeedbackFile(session_players, output_format)
-        feedback_file.create_feedback_file()
-        play_hand = session_players, session_range, feedback_file, show_feedback
-        print(play_hand)  # Only printing out for now to help with testing
-        return play_hand
-
-    def shutdown(self):
-        self.setup_game()
-        app_setup.destroy()
-
-
-app_setup = Tk()
-app_setup.title("No Limit Texas Hold'em Pre-flop Range Trainer")
-app_setup.geometry("1366x768+100+100")
-game_setup = GameSetup(app_setup).grid()
-
-app_setup.mainloop()
+        if show_feedback:
+            feedback_file.create_feedback_file()
+        TableSetup(session_players, session_range, feedback_file, show_feedback).create_table()
