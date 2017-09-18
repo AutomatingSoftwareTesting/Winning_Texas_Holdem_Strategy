@@ -1,0 +1,21 @@
+Hand Number,Date/Time,Range File,Feedback,Position,Position Percentage,Min Opening Hand Type,Hole Cards,Hand Type,Hand Ranking Percentage,Your Decision,Correct Decision,Score
+1,09-18-17 03:03:37,Unimproved Range.txt,Correct,Low Jack,16.67,A5o,8d 6d ,86s,76.17,fold,fold,1
+2,09-18-17 03:03:37,Unimproved Range.txt,Correct,High Jack,20.00,A2o,8d 2s ,82o,81.90,fold,fold,2
+3,09-18-17 03:03:37,Unimproved Range.txt,Incorrect,Cut Off,25.00,K9o,Ks Td ,KTo,23.98,fold,open,2
+4,09-18-17 03:03:37,Unimproved Range.txt,Correct,High Jack,20.00,A2o,9h 8d ,98o,67.42,fold,fold,3
+5,09-18-17 03:03:37,Unimproved Range.txt,Correct,Button,33.33,K2o,Qc 3c ,Q3s,43.59,fold,fold,4
+6,09-18-17 03:03:37,Unimproved Range.txt,Incorrect,Button,33.33,K2o,Ah Ts ,ATo,10.71,fold,open,4
+7,09-18-17 03:03:37,Unimproved Range.txt,Correct,Cut Off,25.00,K9o,8c 7h ,87o,75.87,fold,fold,5
+8,09-18-17 03:03:37,Unimproved Range.txt,Correct,Low Jack,16.67,A5o,Jc 7c ,J7s,49.62,fold,fold,6
+9,09-18-17 03:03:37,Unimproved Range.txt,Incorrect,High Jack,20.00,A2o,Ac 9d ,A9o,11.92,fold,open,6
+10,09-18-17 03:03:37,Unimproved Range.txt,Correct,Low Jack,16.67,A5o,7h 5d ,75o,84.31,fold,fold,7
+11,09-18-17 03:03:37,Unimproved Range.txt,Correct,High Jack,20.00,A2o,Tc 4c ,T4s,62.90,fold,fold,8
+12,09-18-17 03:03:37,Unimproved Range.txt,Correct,Cut Off,25.00,K9o,7h 4h ,74s,84.62,fold,fold,9
+13,09-18-17 03:03:37,Unimproved Range.txt,Correct,High Jack,20.00,A2o,Kc 9s ,K9o,25.19,fold,fold,10
+14,09-18-17 03:03:37,Unimproved Range.txt,Correct,High Jack,20.00,A2o,5d 2s ,52o,96.38,fold,fold,11
+15,09-18-17 03:03:37,Unimproved Range.txt,Correct,High Jack,20.00,A2o,3d 2c ,32o,100.00,fold,fold,12
+16,09-18-17 03:03:37,Unimproved Range.txt,Correct,Low Jack,16.67,A5o,Td 4h ,T4o,63.80,fold,fold,13
+17,09-18-17 03:03:37,Unimproved Range.txt,Correct,Button,33.33,K2o,8h 4h ,84s,78.58,fold,fold,14
+18,09-18-17 03:03:37,Unimproved Range.txt,Correct,Button,33.33,K2o,Th 2d ,T2o,66.21,fold,fold,15
+19,09-18-17 03:03:37,Unimproved Range.txt,Incorrect,High Jack,20.00,A2o,Ac Ad ,AA,0.45,fold,open,15
+20,09-18-17 03:03:37,Unimproved Range.txt,Correct,High Jack,20.00,A2o,6h 3s ,63o,91.55,fold,fold,16

@@ -18,6 +18,24 @@ class GameSetup(Frame):
         self.create_widgets()
         app_setup.grid_columnconfigure(0, weight=1)
 
+    def get_instructions_text(self):
+        return self.instructions_text
+
+    def get_num_players(self):
+        return int(self.num_players)
+
+    def get_hand_range(self):
+        return self.hand_range
+
+    def get_file_extension(self):
+        return self.file_extension
+
+    def get_is_feedback(self):
+        return self.is_feedback
+
+    def get_button_image(self):
+        return self.button_image
+
     def create_widgets(self):
         Label(self, text="Welcome to the No Limit Texas Hold'em Pre-flop Range Trainer Setup Lobby", font=("Arial", 18)).grid(row=0, column=0, columnspan=3, pady=(20, 0))
 

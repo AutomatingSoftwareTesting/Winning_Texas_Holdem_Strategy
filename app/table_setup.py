@@ -1,13 +1,16 @@
 import pyglet
-import sys, os
-# from game_setup import GameSetup, app_setup
+import sys
+import os
+from game_setup import GameSetup, app_setup
 
 
 class TableSetup(object):
-    def __init__(self, num_players, show_feedback, score=0, hand_num=1):
+    def __init__(self, num_players=None, hand_range=None, file_extension=None, show_feedback=None, score=0, hand_num=1):
         self.score = score
         self.hand_num = hand_num
         self.num_players = num_players
+        self.hand_range = hand_range
+        self.file_extension = file_extension
         self.show_feedback = show_feedback
 
     def get_score(self):
@@ -19,8 +22,14 @@ class TableSetup(object):
     def get_num_players(self):
         return int(self.num_players)
 
+    def get_hand_range(self):
+        return self.hand_range
+
+    def get_file_extension(self):
+        return self.file_extension
+
     def get_show_feedback(self):
-        return int(self.show_feedback)
+        return self.show_feedback
 
     def create_table(self):
         window = pyglet.window.Window(width=1050, height=700, caption="No Limit Texas Hold'em Preflop Range Trainer: Test Range")
@@ -36,30 +45,30 @@ class TableSetup(object):
             window.clear()
             table_image.blit(10, 50)
 
-            hand_label = pyglet.text.Label("Hand: " + str(1), # Will change to var later
-                                      font_name="Arial",
-                                      font_size=18,
-                                      x=20, y=50)
-
-            score_label = pyglet.text.Label("Score: " + str(0), # Will change to var later
+            hand_label = pyglet.text.Label("Hand: " + str(self.hand_num),  # Will change to var later
                                            font_name="Arial",
                                            font_size=18,
-                                           x=20, y=20)
+                                           x=20, y=50)
+
+            score_label = pyglet.text.Label("Score: " + str(self.score),  # Will change to var later
+                                            font_name="Arial",
+                                            font_size=18,
+                                            x=20, y=20)
 
             open_label = pyglet.text.Label("Open",
-                                            font_name="Arial",
-                                            font_size=18,
-                                            x=450, y=20)
+                                           font_name="Arial",
+                                           font_size=18,
+                                           x=450, y=20)
 
             fold_label = pyglet.text.Label("Fold",
-                                            font_name="Arial",
-                                            font_size=18,
-                                            x=550, y=20)
+                                           font_name="Arial",
+                                           font_size=18,
+                                           x=550, y=20)
 
             feedback_label = pyglet.text.Label("Feedback",
-                                            font_name="Arial",
-                                            font_size=18,
-                                            x=450, y=665)
+                                               font_name="Arial",
+                                               font_size=18,
+                                               x=450, y=665)
 
             hand_label.draw()
             score_label.draw()
@@ -74,4 +83,4 @@ class TableSetup(object):
 
 # start_game = GameSetup(app_setup)
 # num_players, range, file_extension, show_feedback = start_game.setup_game()
-a = TableSetup(5, True).create_table()
+TableSetup(GameSetup(app_setup).setup_game()).create_table()
