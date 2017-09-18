@@ -36,7 +36,7 @@ class PlayGame(object):
 
     def setup_game(self):
         full_file_name = FeedbackFile(self.num_players, self.file_extension)
-        if self.show_feedback:  # Create feedback file only if user wants it. This will also allow non-Windows machines to play; just without feedback.
+        if self.show_feedback:  # Create feedback file only if user wants it.
             full_file_name.create_feedback_file()
         return full_file_name
 
