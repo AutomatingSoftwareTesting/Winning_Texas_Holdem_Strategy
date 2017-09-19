@@ -4,9 +4,12 @@ import os
 from deck import Deck
 from hand import Hand
 from position import Position
+from range import Range
 
 
 class TableSetup(object):
+    # This is a demo (hack) of how the screens can work together and what type of information should be displayed. I've run out of time for this project because my coding bootcamp begins soon.
+    # Plan on taking several lessons learned here and translating this into java (or maybe javascript). Want to be able to distribute it, and any following updates, much easier.
     def __init__(self, num_players=None, hand_range=None, file_extension=None, show_feedback=None, score=0, hand_num=1):
         self.score = score
         self.hand_num = hand_num
@@ -53,7 +56,7 @@ class TableSetup(object):
 
         card1 = hand.hole_cards[0]
         card2 = hand.hole_cards[1]
-        print(card1)
+        print(card1)  # Leaving print statements to show the gui display is correct.
         print(card2)
 
         img_card1 = os.path.join(current_dir, "../images/cards/" + str(card1) + ".png")
@@ -70,40 +73,50 @@ class TableSetup(object):
 
         position_min = position.min_open()
 
+        r = Range(self.hand_range)
+        correct_decision, hand_percent, total_cards = r.correct_decision(hand_type, position_min)
+
+        min_open_hand = r.min_open_card(position_min)
+
+        def feedback_demo():
+            return "You should " + str(correct_decision) + " because you want to play the top {0:.2f}".format(position_min * 100) + "% of your range; which ends at " + str(min_open_hand) + "."
+
+        def feedback_demo_ln2():
+            return str(hand) + "is in the top {0:.2f}".format(hand_percent * 100) + "% of starting hands for the " + str(self.hand_range) + " range."
+
         position = str(position)
 
         @window.event()
         def on_draw():
             window.clear()
-            table_image.blit(60, 60)
+            table_image.blit(10, 50)
 
             if position == "Button":
-                card1_image.blit(680, 70)
-                card2_image.blit(740, 70)
+                card1_image.blit(630, 60)
+                card2_image.blit(690, 60)
             elif position == "Cut Off":
-                card1_image.blit(820, 170)
-                card2_image.blit(880, 170)
+                card1_image.blit(770, 160)
+                card2_image.blit(850, 160)
             elif position == "High Jack":
-                card1_image.blit(820, 320)
-                card2_image.blit(880, 320)
+                card1_image.blit(770, 310)
+                card2_image.blit(850, 310)
             elif position == "Low Jack":
-                card1_image.blit(680, 400)
-                card2_image.blit(740, 400)
+                card1_image.blit(630, 390)
+                card2_image.blit(690, 390)
             elif position == "5 Off Button":
-                card1_image.blit(440, 400)
-                card2_image.blit(500, 400)
+                card1_image.blit(390, 390)
+                card2_image.blit(450, 390)
             elif position == "6 Off Button":
-                card1_image.blit(260, 400)
-                card2_image.blit(320, 400)
+                card1_image.blit(210, 390)
+                card2_image.blit(270, 390)
             elif position == "7 Off Button":
-                card1_image.blit(120, 320)
-                card2_image.blit(150, 320)
+                card1_image.blit(70, 310)
+                card2_image.blit(130, 310)
             elif position == "8 Off Button":
-                card1_image.blit(120, 170)
-                card2_image.blit(150, 170)
+                card1_image.blit(70, 160)
+                card2_image.blit(130, 160)
             else:
                 print("Sorry, don't know which position you are sitting at.")
-
 
             hand_label = pyglet.text.Label("Hand: " + str(self.hand_num),
                                            font_name="Arial",
@@ -115,20 +128,25 @@ class TableSetup(object):
                                             font_size=18,
                                             x=20, y=20)
 
-            open_label = pyglet.text.Label("Open",
+            open_label = pyglet.text.Label("What is your decision?  '4' = Open",
                                            font_name="Arial",
                                            font_size=18,
-                                           x=450, y=20)
+                                           x=250, y=20)
 
-            fold_label = pyglet.text.Label("Fold",
+            fold_label = pyglet.text.Label("'6' = Fold",
                                            font_name="Arial",
                                            font_size=18,
-                                           x=550, y=20)
+                                           x=650, y=20)
 
-            feedback_label = pyglet.text.Label("Feedback",
+            feedback_label = pyglet.text.Label(str(feedback_demo()),
                                                font_name="Arial",
-                                               font_size=18,
-                                               x=450, y=665)
+                                               font_size=14,
+                                               x=100, y=665)
+
+            feedback_label_ln2 = pyglet.text.Label(str(feedback_demo_ln2()),
+                                                   font_name="Arial",
+                                                   font_size=14,
+                                                   x=150, y=645)
 
             hand_label.draw()
             score_label.draw()
@@ -137,5 +155,6 @@ class TableSetup(object):
 
             if self.show_feedback:
                 feedback_label.draw()
+                feedback_label_ln2.draw()
 
         pyglet.app.run()

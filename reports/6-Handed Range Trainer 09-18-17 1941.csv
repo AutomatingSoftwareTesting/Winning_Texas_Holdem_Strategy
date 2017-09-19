@@ -1,0 +1,21 @@
+Hand Number,Date/Time,Range File,Feedback,Position,Position Percentage,Min Opening Hand Type,Hole Cards,Hand Type,Hand Ranking Percentage,Your Decision,Correct Decision,Score
+1,09-18-17 19:41:40,Unimproved Range.txt,Incorrect,Low Jack,16.67,A5o,2h 2d ,22,5.88,fold,open,0
+2,09-18-17 19:41:40,Unimproved Range.txt,Incorrect,Button,33.33,K2o,8c 8d ,88,3.17,fold,open,0
+3,09-18-17 19:41:40,Unimproved Range.txt,Correct,Cut Off,25.00,K9o,Th 2d ,T2o,66.21,fold,fold,1
+4,09-18-17 19:41:40,Unimproved Range.txt,Correct,Low Jack,16.67,A5o,Js 5d ,J5o,52.94,fold,fold,2
+5,09-18-17 19:41:40,Unimproved Range.txt,Correct,Low Jack,16.67,A5o,8h 4d ,84o,79.49,fold,fold,3
+6,09-18-17 19:41:40,Unimproved Range.txt,Correct,Button,33.33,K2o,Jh Tc ,JTo,46.91,fold,fold,4
+7,09-18-17 19:41:40,Unimproved Range.txt,Correct,Low Jack,16.67,A5o,Kc 8h ,K8o,26.40,fold,fold,5
+8,09-18-17 19:41:40,Unimproved Range.txt,Correct,Button,33.33,K2o,6h 5d ,65o,89.14,fold,fold,6
+9,09-18-17 19:41:41,Unimproved Range.txt,Correct,Button,33.33,K2o,3h 2c ,32o,100.00,fold,fold,7
+10,09-18-17 19:41:41,Unimproved Range.txt,Correct,Cut Off,25.00,K9o,7h 2c ,72o,87.93,fold,fold,8
+11,09-18-17 19:41:41,Unimproved Range.txt,Correct,Low Jack,16.67,A5o,Ks 3c ,K3o,32.43,fold,fold,9
+12,09-18-17 19:41:41,Unimproved Range.txt,Incorrect,Button,33.33,K2o,Ad 3s ,A3o,19.16,fold,open,9
+13,09-18-17 19:41:41,Unimproved Range.txt,Correct,High Jack,20.00,A2o,6c 3d ,63o,91.55,fold,fold,10
+14,09-18-17 19:41:41,Unimproved Range.txt,Correct,High Jack,20.00,A2o,8s 2c ,82o,81.90,fold,fold,11
+15,09-18-17 19:41:41,Unimproved Range.txt,Incorrect,Button,33.33,K2o,4s 4d ,44,4.98,fold,open,11
+16,09-18-17 19:41:41,Unimproved Range.txt,Incorrect,Button,33.33,K2o,3h 3d ,33,5.43,fold,open,11
+17,09-18-17 19:41:41,Unimproved Range.txt,Incorrect,Button,33.33,K2o,7d 7s ,77,3.62,fold,open,11
+18,09-18-17 19:41:41,Unimproved Range.txt,Correct,Cut Off,25.00,K9o,5c 4s ,54o,93.97,fold,fold,12
+19,09-18-17 19:41:41,Unimproved Range.txt,Correct,Low Jack,16.67,A5o,4h 3d ,43o,97.59,fold,fold,13
+20,09-18-17 19:41:41,Unimproved Range.txt,Correct,High Jack,20.00,A2o,Qh Jc ,QJo,34.84,fold,fold,14
