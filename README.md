@@ -8,11 +8,11 @@ This is a No Limit Texas Hold'em (NLTH) Pre-flop Range Trainer. It gives a playe
 
 ## Program Technical Information
 * Developed in Python.
- * Hasn't been tested with Python 2; only 3.
+  * Hasn't been tested with Python 2; only 3.
 * Additional modules / libraries:
- * 1st graphical user interface (gui) uses tkinter.
- * 2nd gui uses pyglet.
- * Test cases use py.test.
+  * 1st graphical user interface (gui) uses tkinter.
+  * 2nd gui uses pyglet.
+  * Test cases use py.test.
  
 ## Licensing
 
