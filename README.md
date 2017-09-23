@@ -13,10 +13,11 @@ This is a No Limit Texas Hold'em (NLTH) Pre-flop Range Trainer. It gives a playe
   * 1st graphical user interface (gui) uses tkinter.
   * 2nd gui uses pyglet.
   * Test cases use py.test.
+* Window only file / directory navigation.
  
 ## Licensing
 
-Please see the file called LICENSE.
+See the file called LICENSE.
 
 ## Additional Information
-See the [game instructions and documentation](https://github.com/jdcald13/Winning_Texas_Holdem_Strategy/wiki).
+[Game instructions, program design and development information](https://github.com/jdcald13/Winning_Texas_Holdem_Strategy/wiki).
