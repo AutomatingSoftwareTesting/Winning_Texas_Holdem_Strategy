@@ -6,7 +6,7 @@ This project was created to help me demonstrate several skills I've acquired dur
 
 This is a No Limit Texas Hold'em (NLTH) Pre-flop Range Trainer. It gives a player random cards and a random position at the table. Then, the player has to decide if they would open or fold their hand. Finally, the application compares the player's decision to the mathematically correct decision based off of the selected hand range (which is customizable by the user).
 
-## Program Technical Information
+## Installation
 * Developed in Python.
   * Hasn't been tested with Python 2; only 3.
 * Additional modules / libraries:
@@ -14,10 +14,10 @@ This is a No Limit Texas Hold'em (NLTH) Pre-flop Range Trainer. It gives a playe
   * 2nd gui uses pyglet.
   * Test cases use py.test.
 * Window only file / directory navigation.
- 
-## Licensing
-
-See the file called LICENSE.
 
 ## Additional Information
 [Game instructions, program design and development information](https://github.com/jdcald13/Winning_Texas_Holdem_Strategy/wiki).
+
+## Licensing
+
+See the file called LICENSE.
