@@ -21,3 +21,6 @@ This is a No Limit Texas Hold'em (NLTH) Pre-flop Range Trainer. It gives a playe
 ## Licensing
 
 See the file called LICENSE.
+
+### About the developer
+To see additional information and other projects please visit my [personal website](http://jdcald13.com).
