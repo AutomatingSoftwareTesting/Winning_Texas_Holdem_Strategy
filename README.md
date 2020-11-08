@@ -1,7 +1,5 @@
 # Winning Texas Hold'em Strategy
 
-This project was created to help me demonstrate several skills I've acquired during my past several jobs.
-
 ## Program Overview
 
 This is a No Limit Texas Hold'em (NLTH) Pre-flop Range Trainer. It gives a player random cards and a random position at the table. Then, the player has to decide if they would open or fold their hand. Finally, the application compares the player's decision to the mathematically correct decision based off of the selected hand range (which is customizable by the user).
@@ -21,6 +19,3 @@ This is a No Limit Texas Hold'em (NLTH) Pre-flop Range Trainer. It gives a playe
 ## Licensing
 
 See the file called LICENSE.
-
-### About the developer
-To see additional information and other projects please visit my [personal website](http://jdcald13.com).
